@@ -112,7 +112,103 @@ public class Elágazás {
         }
         else{
             System.out.println("Elégtelen");
-    }
-    
+        }
+        
+        // Ternáris operátor
+        // (feltétel) ? igaz : hamis
+        String eredmeny = (szazalek % 2 == 0) ? "Páros" : "Páratlan";
+        System.out.println(eredmeny);
+        
+        // Esetszétválasztás - Switch-case
+        String honap = "Február";
+        // Switch(egyenlőség) ÉRTÉK alapján vizsgál ==
+        switch(honap){
+            // if(honap == "Január")
+            case "Január":
+                System.out.println("01");
+                break;
+            // else if(honap == "Február")
+            case "Február":
+                System.out.println("02");
+                break;
+            // else if(honap == "Március")
+            case "Március":
+                System.out.println("03");
+                break;
+            // else ág
+            default:
+                System.out.println("Nincs ilyen hónap");
+        }
+        
+        // Felhasználó megad egy sorszámot, válaszul megkapja az melyik hónap
+        /*String honap = "Február";
+        // Switch(egyenlőség) ÉRTÉK alapján vizsgál ==
+        switch(honap){
+            // if(honap == "Január")
+            case "Január":
+                System.out.println("01");
+                break;
+            // else if(honap == "Február")
+            case "Február":
+                System.out.println("02");
+                break;
+            // else if(honap == "Március")
+            case "Március":
+                System.out.println("03");
+                break;
+            // else ág
+            default:
+                System.out.println("Nincs ilyen hónap");
+        }*/
+        
+        System.out.println("Kérek egy számot: ");
+        // be = new Scanner(System.in);
+        int honapp = be.nextInt(); 
+        
+        // Switch(egyenlőség) ÉRTÉK alapján vizsgál ==
+        switch(honapp){
+            // if(honap == "Január")
+            case 1:
+                System.out.println("Január");
+                break;
+            // else if(honap == "Február")
+            case 2:
+                System.out.println("Február");
+                break;
+            // else if(honap == "Március")
+            case 3:
+                System.out.println("Március");
+                break;
+            case 4:
+                System.out.println("Április");
+                break;
+            case 5:
+                System.out.println("Május");
+                break;
+            case 6:
+                System.out.println("Június");
+                break;
+            case 7:
+                System.out.println("Július");
+                break;
+            case 8:
+                System.out.println("Augusztus");
+                break;
+            case 9:
+                System.out.println("Szeptember");
+                break;
+            case 10:
+                System.out.println("Október");
+                break;
+            case 11:
+                System.out.println("November");
+                break;
+            case 12:
+                System.out.println("December");
+                break;
+            // else ág
+            default:
+                System.out.println("Nincs ilyen hónap");
+        }
 }
 }
